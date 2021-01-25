@@ -1,0 +1,312 @@
+     /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+     
+     html,
+     body,
+     div,
+     span,
+     applet,
+     object,
+     iframe,
+     h1,
+     h2,
+     h3,
+     h4,
+     h5,
+     h6,
+     p,
+     blockquote,
+     pre,
+     a,
+     abbr,
+     acronym,
+     address,
+     big,
+     cite,
+     code,
+     del,
+     dfn,
+     em,
+     img,
+     ins,
+     kbd,
+     q,
+     s,
+     samp,
+     small,
+     strike,
+     strong,
+     sub,
+     sup,
+     tt,
+     var,
+     b,
+     u,
+     i,
+     center,
+     dl,
+     dt,
+     dd,
+     ol,
+     ul,
+     li,
+     fieldset,
+     form,
+     label,
+     legend,
+     table,
+     caption,
+     tbody,
+     tfoot,
+     thead,
+     tr,
+     th,
+     td,
+     article,
+     aside,
+     canvas,
+     details,
+     embed,
+     figure,
+     figcaption,
+     footer,
+     header,
+     hgroup,
+     menu,
+     nav,
+     output,
+     ruby,
+     section,
+     summary,
+     time,
+     mark,
+     audio,
+     video {
+         margin: 0;
+         padding: 0;
+         border: 0;
+         font-size: 100%;
+         font: inherit;
+         vertical-align: baseline;
+     }
+     /* HTML5 display-role reset for older browsers */
+     
+     article,
+     aside,
+     details,
+     figcaption,
+     figure,
+     footer,
+     header,
+     hgroup,
+     menu,
+     nav,
+     section {
+         display: block;
+     }
+     
+     body {
+         line-height: 1;
+     }
+     
+     ol,
+     ul {
+         list-style: none;
+     }
+     
+     blockquote,
+     q {
+         quotes: none;
+     }
+     
+     blockquote:before,
+     blockquote:after,
+     q:before,
+     q:after {
+         content: '';
+         content: none;
+     }
+     
+     table {
+         border-collapse: collapse;
+         border-spacing: 0;
+     }
+     /*-------------------- css reset ends here ----------------------- */
+     
+      :root {
+         --primary: rgb(34, 41, 70);
+         --secondary: rgb(55, 182, 103);
+         --tertiary: rgb(156, 156, 159);
+     }
+     
+     *,
+     *::before,
+     *::after {
+         box-sizing: border-box;
+         margin: 0 auto;
+         padding: 0;
+     }
+     
+     body {
+         font-family: 'Poppins', sans-serif;
+         line-height: 1.5;
+     }
+     
+     .container {
+         max-width: 86rem;
+         margin: 0 auto;
+         width: 100%;
+         padding: 0 2rem;
+     }
+     
+     .flex {
+         display: flex;
+         justify-content: space-between;
+     }
+     
+     .item-center {
+         align-items: center;
+     }
+     
+     a {
+         text-decoration: none;
+     }
+     /* --------------------------columns--------------------- */
+     
+     .flex-48 {
+         flex: 0 1 48%;
+     }
+     
+     .flex-30 {
+         flex: 0 1 30%;
+     }
+     
+     .width-full {
+         width: 100%;
+     }
+     
+     .padding {
+         padding: 5rem 0;
+     }
+     
+     .padding_20 i {
+         padding: 0 1rem;
+     }
+     /*------------------------------- header------------------------------------ */
+     
+     .header {
+         background-color: var(--primary);
+         padding: 1rem 0;
+     }
+     
+     .nav.active {
+         color: var(--secondary);
+     }
+     
+     .flex .active {
+         color: var(--secondary);
+         font-size: 1.375rem;
+     }
+     
+     .header a {
+         color: white;
+     }
+     
+     .nav li {
+         margin-left: 2rem;
+     }
+     
+     .nav a {
+         font-size: 1.25rem;
+         font-weight: 600;
+         text-transform: uppercase;
+         text-decoration: none;
+     }
+     /* -----------------------article------------------------ */
+     
+     .article {
+         background: rgb(233, 236, 252);
+     }
+     
+     .heading {
+         font-size: 3rem;
+         color: var(--primary);
+         padding: 0 0 1rem 0;
+     }
+     
+     p {
+         font-size: 1.125rem;
+         line-height: 1.7;
+         color: rgb(132, 133, 136);
+     }
+     
+     .btn {
+         padding: .75rem 2rem;
+         background-color: var(--secondary);
+         color: white;
+         margin-top: 1.0625rem;
+         display: inline-block;
+         border-radius: .4375rem;
+         font-size: 1.125rem;
+     }
+     
+     h2 {
+         font-size: 1.875rem;
+         padding: 0 0 1rem 0;
+     }
+     
+     h3 {
+         font-size: 3rem;
+         text-align: center;
+     }
+     
+     .flex-30 {
+         padding: 1rem;
+     }
+     
+     .flex-30 img {
+         height: 16rem;
+     }
+     
+     .flex-30 .btn {
+         font-size: 1rem;
+         padding: .3rem .9rem;
+     }
+     
+     .footer {
+         background: var(--primary);
+         padding: 2rem;
+         color: rgb(188, 192, 210);
+         font-size: 1.5rem;
+     }
+     
+     @media all and (max-width: 768px) {
+         html {
+             font-size: 16px;
+         }
+         .flex {
+             flex-direction: column;
+         }
+         .flex_col_rev {
+             flex-direction: column-reverse;
+         }
+         .flex_row {
+             flex-direction: row;
+             padding: 1rem 0;
+         }
+         .footer {
+             text-align: center;
+         }
+         .flex-30 img {
+             height: 26rem;
+             width: 100%;
+         }
+     }
+     
+     @media all and (max-width: 500px) {
+         html {
+             font-size: 12px;
+         }
+     }
